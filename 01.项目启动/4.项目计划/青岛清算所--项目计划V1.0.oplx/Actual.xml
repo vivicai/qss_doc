@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="bzJbleaaaaa">
+  <start-date>2017-09-11T00:00:00.000Z</start-date>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+      <calendar name="Overtime" editable="yes" overtime="yes">
+        <event start="2017-09-30T00:00:00.000Z" end="2017-09-30T04:00:00.000Z" sd="6116" st="28800" ed="6116" et="43200"/>
+        <event start="2017-09-30T05:00:00.000Z" end="2017-09-30T09:00:00.000Z" sd="6116" st="46800" ed="6116" et="61200"/>
+      </calendar>
+      <calendar name="Time Off" editable="yes" overtime="no">
+        <event start="2017-09-29T16:00:00.000Z" end="2017-09-30T00:00:00.000Z" sd="6116" st="0" ed="6116" et="28800"/>
+        <event start="2017-09-30T04:00:00.000Z" end="2017-09-30T05:00:00.000Z" sd="6116" st="43200" ed="6116" et="46800"/>
+        <event start="2017-09-30T09:00:00.000Z" end="2017-09-30T15:59:00.000Z" sd="6116" st="61200" ed="6116" et="86340"/>
+        <event start="2017-10-01T16:00:00.000Z" end="2017-10-06T15:59:00.000Z" sd="6118" st="0" ed="6122" et="86340"/>
+      </calendar>
+    </schedule>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+    <child-resource idref="r5"/>
+    <child-resource idref="r6"/>
+    <child-resource idref="r7"/>
+    <child-resource idref="r8"/>
+    <child-resource idref="r9"/>
+    <child-resource idref="r10"/>
+    <child-resource idref="r11"/>
+    <child-resource idref="r14"/>
+    <child-resource idref="r15"/>
+    <child-resource idref="r16"/>
+  </resource>
+  <resource id="r1">
+    <name>架构师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r2">
+    <name>项目经理</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r3">
+    <name>项目总监</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r4">
+    <name>业务分析</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r5">
+    <name>模型架构师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r6">
+    <name>ETL工程师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r7">
+    <name>UI设计师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r8">
+    <name>Java开发工程师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r9">
+    <name>前端开发工程师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r10">
+    <name>测试</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r11">
+    <name>整体团队</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r14">
+    <name>ETL工程师1</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r15">
+    <name>ETL工程师2</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <resource id="r16">
+    <name>移动开发工程师</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday"/>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+  </task>
+  <task id="t1">
+    <title>准备</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t8"/>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <child-task idref="t14"/>
+  </task>
+  <task id="t2">
+    <title>需求分析</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t35"/>
+    <child-task idref="t36"/>
+    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t12"/>
+  </task>
+  <task id="t3">
+    <title>设计</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t16"/>
+    <child-task idref="t15"/>
+    <child-task idref="t19"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+  </task>
+  <task id="t4">
+    <title>开发</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t43"/>
+    <child-task idref="t58"/>
+    <child-task idref="t56"/>
+    <child-task idref="t65"/>
+    <child-task idref="t62"/>
+  </task>
+  <task id="t5">
+    <title>测试</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t50"/>
+    <child-task idref="t49"/>
+    <child-task idref="t48"/>
+    <child-task idref="t47"/>
+  </task>
+  <task id="t6">
+    <title>上线验收</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t63"/>
+    <child-task idref="t51"/>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <child-task idref="t54"/>
+    <child-task idref="t55"/>
+  </task>
+  <task id="t8">
+    <title>环境搭建</title>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <start-constraint-date>2017-09-18T01:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+    <start-no-earlier-than>2017-09-18T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t9">
+    <title>市场透视</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t22"/>
+    <child-task idref="t21"/>
+    <prerequisite-task idref="t10"/>
+  </task>
+  <task id="t10">
+    <title>风险统览</title>
+    <leveled-start>2017-09-14T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t11">
+    <title>计划制定</title>
+    <priority>500</priority>
+    <effort>54000</effort>
+    <start-constraint-date>2017-09-15T01:00:00.000Z</start-constraint-date>
+    <assignment idref="r2"/>
+    <start-no-earlier-than>2017-09-15T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t12">
+    <title>团队搭建</title>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <start-constraint-date>2017-09-14T00:00:00.000Z</start-constraint-date>
+    <assignment idref="r3"/>
+    <start-no-earlier-than>2017-09-14T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t13">
+    <title>风险识别</title>
+    <leveled-start>2017-09-14T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t12"/>
+    <assignment idref="r11"/>
+  </task>
+  <task id="t14">
+    <title>干系人登记</title>
+    <leveled-start>2017-09-19T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t11"/>
+    <prerequisite-task idref="t12"/>
+    <prerequisite-task idref="t13"/>
+    <assignment idref="r11"/>
+  </task>
+  <task id="t15">
+    <title>数据仓库设计</title>
+    <leveled-start>2017-09-30T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>144000</effort>
+    <note>
+      <text>
+        <p>
+          <run>
+            <lit>1. </lit>
+          </run>
+          <run>
+            <lit>分层设计</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>2. </lit>
+          </run>
+          <run>
+            <lit>主题设计</lit>
+          </run>
+        </p>
+        <p>
+          <run>
+            <lit>3. </lit>
+          </run>
+          <run>
+            <lit>规范建立</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <prerequisite-task idref="t35"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t16">
+    <title>整体架构设计</title>
+    <leveled-start>2017-09-22T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>144000</effort>
+    <prerequisite-task idref="t36"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t17">
+    <title>UI设计</title>
+    <leveled-start>2017-09-15T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>864000</effort>
+    <prerequisite-task idref="t10"/>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t18">
+    <title>数据接口设计</title>
+    <leveled-start>2017-09-30T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <prerequisite-task idref="t35"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t19">
+    <title>ETL设计</title>
+    <leveled-start>2017-09-30T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>144000</effort>
+    <prerequisite-task idref="t35"/>
+    <assignment idref="r6"/>
+  </task>
+  <task id="t20">
+    <title>风险分析</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t28"/>
+    <child-task idref="t27"/>
+    <child-task idref="t26"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+  </task>
+  <task id="t21">
+    <title>指标比对</title>
+    <leveled-start>2017-09-20T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t22"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t22">
+    <title>风险画像</title>
+    <leveled-start>2017-09-15T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t25">
+    <title>风控报告</title>
+    <leveled-start>2017-09-21T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t21"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t26">
+    <title>可疑交易监控</title>
+    <leveled-start>2017-09-18T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t27"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t27">
+    <title>资金异动监控</title>
+    <leveled-start>2017-09-15T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t28"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t28">
+    <title>客户风险分析</title>
+    <leveled-start>2017-09-14T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t29">
+    <title>市场舆情监控</title>
+    <leveled-start>2017-09-19T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t26"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t30">
+    <title>交易商品监控</title>
+    <leveled-start>2017-09-21T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t29"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t31">
+    <title>工商信息监控</title>
+    <leveled-start>2017-09-22T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t30"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t32">
+    <title>业务异常监控</title>
+    <leveled-start>2017-09-25T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t31"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t33">
+    <title>数据报表</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t34"/>
+    <prerequisite-task idref="t20"/>
+  </task>
+  <task id="t34">
+    <title>业务统览</title>
+    <leveled-start>2017-09-26T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t35">
+    <title>业务需求</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t10"/>
+    <child-task idref="t9"/>
+    <child-task idref="t20"/>
+    <child-task idref="t33"/>
+    <child-task idref="t25"/>
+    <child-task idref="t61"/>
+  </task>
+  <task id="t36">
+    <title>技术需求</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t38"/>
+    <child-task idref="t37"/>
+    <child-task idref="t39"/>
+  </task>
+  <task id="t37">
+    <title>现数据仓库状况</title>
+    <leveled-start>2017-09-19T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t38"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t38">
+    <title>源系统状况</title>
+    <leveled-start>2017-09-18T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t8"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t39">
+    <title>未来技术要求</title>
+    <leveled-start>2017-09-21T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t37"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t41">
+    <title>系统信息配置表</title>
+    <leveled-start>2017-10-26T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t46"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t42">
+    <title>维度表</title>
+    <leveled-start>2017-10-18T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t44"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t43">
+    <title>数据仓库建模</title>
+    <type>group</type>
+    <priority>500</priority>
+    <child-task idref="t44"/>
+    <child-task idref="t42"/>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+    <child-task idref="t41"/>
+    <prerequisite-task idref="t15"/>
+  </task>
+  <task id="t44">
+    <title>事实表</title>
+    <leveled-start>2017-10-13T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t45">
+    <title>基本信息表</title>
+    <leveled-start>2017-10-20T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t42"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t46">
+    <title>前端展示表</title>
+    <leveled-start>2017-10-24T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t45"/>
+    <assignment idref="r5"/>
+  </task>
+  <task id="t47">
+    <title>用户测试</title>
+    <leveled-start>2017-12-15T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>144000</effort>
+    <prerequisite-task idref="t48"/>
+    <assignment idref="r10"/>
+  </task>
+  <task id="t48">
+    <title>集成测试</title>
+    <leveled-start>2017-12-01T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>288000</effort>
+    <prerequisite-task idref="t4"/>
+    <assignment idref="r10"/>
+  </task>
+  <task id="t49">
+    <title>测试用例编写</title>
+    <leveled-start>2017-10-11T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>576000</effort>
+    <prerequisite-task idref="t50"/>
+    <assignment idref="r10"/>
+  </task>
+  <task id="t50">
+    <title>测试计划制定</title>
+    <leveled-start>2017-09-30T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <prerequisite-task idref="t35"/>
+    <assignment idref="r10"/>
+  </task>
+  <task id="t51">
+    <title>打包程序</title>
+    <leveled-start>2017-12-22T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t52">
+    <title>上线检查列表</title>
+    <leveled-start>2017-12-22T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t53">
+    <title>上线部署</title>
+    <leveled-start>2017-12-26T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>57600</effort>
+    <prerequisite-task idref="t51"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t54">
+    <title>部署后测试</title>
+    <leveled-start>2017-12-28T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>28800</effort>
+    <prerequisite-task idref="t53"/>
+    <assignment idref="r10"/>
+  </task>
+  <task id="t55">
+    <title>上线</title>
+    <type>milestone</type>
+    <leveled-start>2017-12-29T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <prerequisite-task idref="t54"/>
+  </task>
+  <task id="t56">
+    <title>前端报表开发</title>
+    <leveled-start>2017-09-18T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>1440000</effort>
+    <assignment idref="r9"/>
+  </task>
+  <task id="t58">
+    <title>ETL开发</title>
+    <leveled-start>2017-10-13T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>1440000</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>720000</fixed-duration>
+    <prerequisite-task idref="t19"/>
+    <assignment idref="r14"/>
+    <assignment idref="r15"/>
+  </task>
+  <task id="t61">
+    <title>基本信息管理</title>
+    <leveled-start>2017-09-27T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>86400</effort>
+    <prerequisite-task idref="t34"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t62">
+    <title>接口开发</title>
+    <leveled-start>2017-10-11T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>864000</effort>
+    <prerequisite-task idref="t18"/>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t63">
+    <title>文档编写、培训、知识转移</title>
+    <leveled-start>2017-09-30T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>576000</effort>
+    <prerequisite-task idref="t2"/>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t65">
+    <title>微信端接口开发</title>
+    <leveled-start>2017-10-09T00:00:00.000Z</leveled-start>
+    <priority>500</priority>
+    <effort>288000</effort>
+    <assignment idref="r16"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
