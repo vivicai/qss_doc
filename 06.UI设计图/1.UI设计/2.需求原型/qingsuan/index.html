@@ -1,0 +1,619 @@
+<<<<<<< HEAD:06.UI设计图/2.需求原型/qingsuan/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青岛清算</title>
+    <link rel="stylesheet" href="asserts/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-logo">
+        <img src="imgs/logo_bsgq.png" alt="">
+    </div>
+    <div class="header_tabs">
+        <ul>
+            <!--<li class="header_tabs_active jypt">交易平台-->
+                <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+               <!--<ul>-->
+                   <li class="header_tabs_active">大宗类</li>
+                   <li>权益类</li>
+               <!--</ul>-->
+            <!--</li>-->
+            <li>P2P平台</li>
+            <li>小贷平台</li>
+            <li>其他平台</li>
+        </ul>
+    </div>
+    <!--<div class="date_time">-->
+        <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+    <!--</div>-->
+    <div class="header_btns"></div>
+</div>
+<div class="content">
+    <div class="slider">
+        <div class="slider_title">交易平台-大宗类</div>
+        <ul class="menus">
+            <li class="top1 li_active">监管全景</li>
+            <li>机构透视<span></span></li>
+            <ul class="sub_menus sub_menus2">
+                <li><img src="imgs/menus/fxhx_icon.png" alt="">风险画像</li>
+                <li><img src="imgs/menus/zbdb_icon.png" alt="">指标对比</li>
+            </ul>
+            <li>风险分析<span></span></li>
+            <ul class="sub_menus sub_menus3">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">客户风险分析</li>
+                <li><img src="imgs/menus/zjyd_icon.png" alt="">资金异动监控</li>
+                <li><img src="imgs/menus/kyjy_icon.png" alt="">可疑交易监控</li>
+                <li><img src="imgs/menus/scyq_icon.png" alt="">市场舆情监控</li>
+                <li><img src="imgs/menus/jysp_icon.png" alt="">交易产品监控</li>
+                <li><img src="imgs/menus/ywyc_icon.png" alt="">业务异常监控</li>
+                <li><img src="imgs/menus/gsxx_icon.png" alt="">工商信息监控</li>
+            </ul>
+            <li>风控报告<span></span></li>
+            <ul class="sub_menus sub_menus4">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控周报</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控月报</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控年报</li>
+        </ul>
+        <li>业务数据<span></span></li>
+            <ul class="sub_menus sub_menus5">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">业务统计</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">客户信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">资金信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">交易信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">交割统计</li>
+            </ul>
+            <li>风险预测</li>
+        </ul>
+    </div>
+    <div class="main active">
+        <div class="box box1 box_active">
+            <div class="box_header">
+                <ul>
+                    <li>机构数：<span>5</span>家</li>
+                    <li>交易额：<span>403,213,543</span>元</li>
+                    <li>累计风险：<span>124</span>起</li>
+                    <li>今日风险：<span>8</span>起</li>
+                </ul>
+            </div>
+            <div class="box_content">
+                <div class="box1_left">
+                    <div class="jgfbt">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+
+                    </div>
+                    <div class="jgfbt_header"><p>机构分布图</p></div>
+                    <!-- Button trigger modal -->
+                    <span data-toggle="modal" data-target="#myModal"></span>
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">机构分布图</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="imgs/modal_map.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1_right">
+                    <div class="box1_right_top">
+                        <div class="bottom-right_top_left">
+                            <div class="fxzlzb"></div>
+                            <div class="fxzlzb_header"><p>风险种类占比</p></div>
+                            <!-- Button trigger modal -->
+                            <span data-toggle="modal" data-target="#myModal1"></span>
+                            <!-- Modal -->
+                            <div class="modal fade " id="myModal1" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel1">风险种类占比</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="imgs/modal_pie.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-right_top_right">
+                           <div class="bottom-right_top_right_top">
+                               <div class="yhs_header"><p>用户数:<b>421,243</b></p></div>
+                               <span data-toggle="modal" data-target="#myModal2"></span>
+                               <div class="yhs"></div>
+                           </div>
+                            <div class="bottom-right_top_right_bottom">
+                                <div class="cdzj_header"><p>沉淀资金:<b>241,232,124</b></p></div>
+                                <span data-toggle="modal" data-target="#myModal3"></span>
+                                <div class="cdzj"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box1_right_bottom">
+                        <div class="fxsjmx" data-toggle="modal" data-target="#myModal5"></div>
+                        <!-- Button trigger modal -->
+                        <span data-toggle="modal" data-target="#myModal4"></span>
+                        <!-- Modal -->
+                        <div class="modal fade " id="myModal4" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel">
+                            <div class="modal-dialog " role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">风险事件明细</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="imgs/modal_table.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade " id="myModal5" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel">
+                            <div class="modal-dialog " role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel5">风险事件明细</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="imgs/modal_table.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box"><img src="imgs/box_fxhx.png" alt=""></div>
+            <div class="box"><img src="imgs/box_zbdb.png" alt=""></div>
+        </div>
+        <div class="box3">
+            <div class="box"><img src="imgs/box_khfx.png" alt=""></div>
+            <div class="box"><img src="imgs/box_zjyd.png" alt=""></div>
+            <div class="box"><img src="imgs/box_kyjy.png" alt=""></div>
+            <div class="box"><img src="imgs/box_scyq.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+        <div class="box4">
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+        <div class="box5">
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+    </div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+</div>
+
+</body>
+</html>
+<script src="asserts/js/jquery-2.2.4.js"></script>
+<script src="asserts/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+//        上方tab栏切换
+        $('.header_tabs>ul>li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('header_tabs_active').siblings().removeClass('header_tabs_active');
+            $(".main:eq(" + index + ")").addClass("active").siblings().removeClass("active");
+        });
+//        二级菜单切换
+        $('.jypt ul li').click(function () {
+            $(this).addClass('dropdown-menu_li_active').siblings().removeClass('dropdown-menu_li_active')
+        });
+//        点击交易平台出现下拉框
+        $('.jypt').siblings().click(function () {
+            $('.jypt ul').css('display','none');
+        })
+        $('.jypt').click(function () {
+            $('.jypt ul').toggle();
+        });
+//        时间
+        var timer = ""
+        timer = setInterval(function () {
+            var myDate = new Date();
+//            var hour = myDate.getHours() < 10 ? "0" + myDate.getHours() : myDate.getHours();
+//            var min = myDate.getMinutes() < 10 ? "0" + myDate.getMinutes() : myDate.getMinutes();
+//            var sec = myDate.getSeconds() < 10 ? "0" + myDate.getSeconds() : myDate.getSeconds();
+            var year=myDate.getFullYear();
+            var month=myDate.getMonth()+1;
+            var day=myDate.getDate()< 10 ? "0" + myDate.getDate() : myDate.getDate();
+//            var time = (hour + ":" + min + ":" + sec);
+            var time = (year + "-" + month + "-" + day);
+            var localtime = $(".header .date_time span") //所在位置
+            localtime.html(time)
+        }, 1000)
+
+//        左侧菜单切换
+        $(".menus>li").click(function () {
+            $(".menus li").removeClass('li_active');
+            $(this).addClass('li_active').siblings('li').removeClass('li_active');
+            $(this).next('.sub_menus').css('display', 'block');
+            $(this).siblings('li').next('.sub_menus').css('display', 'none');
+
+
+        });
+//       右侧内容切换
+        $('.sub_menus li').click(function () {
+            var index = $(this).index();
+            var box_index=$(this).parent('.sub_menus').index()/2+1;
+            $(this).addClass('li_active').siblings('li').removeClass('li_active');
+            $(".box").removeClass("box_active");
+            $( "." + "box"+box_index).css('display','block').siblings().css('display','none');
+            $( "." + "box"+box_index).children('.box').eq(index).addClass("box_active").siblings().removeClass('box_active');
+//            二级目录前的图片切换
+//            var bgImg=$(this).find('img').attr('src');
+//            if(bgImg.indexOf('_icon.png')>=0){
+//                bgImg = bgImg.replace("_icon.png", "_sel.png");
+//                $(this).find('img').attr('src',bgImg);
+//            }
+        });
+        $('.top1').click(function () {
+            $('.box1').css('display','block');
+        });
+        //地图上的图片弹出
+        var imgs=['imgs/map_img/page1.png','imgs/map_img/page2.png','imgs/map_img/page3.png','imgs/map_img/page4.png','imgs/map_img/page5.png']
+        $('.jgfbt>img').click(function () {
+            var index=$(this).index()
+            $(this).attr('src',imgs[index]).siblings('img').attr('src','');
+        });
+		
+		 $('.jgfbt>img').mouseout(function () {
+            var index=$(this).index()
+            $(this).attr('src','');
+        })
+    });
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青岛清算</title>
+    <link rel="stylesheet" href="asserts/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+<div class="header">
+    <div class="header-logo">
+        <img src="imgs/logo.png" alt="">
+    </div>
+    <div class="header_tabs">
+        <ul>
+            <!--<li class="header_tabs_active jypt">交易平台-->
+                <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+               <!--<ul>-->
+                   <li class="header_tabs_active">大宗类</li>
+                   <li>权益类</li>
+               <!--</ul>-->
+            <!--</li>-->
+            <li>P2P平台</li>
+            <li>小贷平台</li>
+            <li>其他平台</li>
+        </ul>
+    </div>
+    <!--<div class="date_time">-->
+        <!--&lt;!&ndash;<span></span>&ndash;&gt;-->
+    <!--</div>-->
+    <div class="header_btns"></div>
+</div>
+<div class="content">
+    <div class="slider">
+        <div class="slider_title">交易平台-大宗类</div>
+        <ul class="menus">
+            <li class="top1 li_active">监管全景</li>
+            <li>机构透视<span></span></li>
+            <ul class="sub_menus sub_menus2">
+                <li><img src="imgs/menus/fxhx_icon.png" alt="">风险画像</li>
+                <li><img src="imgs/menus/zbdb_icon.png" alt="">指标对比</li>
+            </ul>
+            <li>风险分析<span></span></li>
+            <ul class="sub_menus sub_menus3">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">客户风险分析</li>
+                <li><img src="imgs/menus/zjyd_icon.png" alt="">资金异动监控</li>
+                <li><img src="imgs/menus/kyjy_icon.png" alt="">可疑交易监控</li>
+                <li><img src="imgs/menus/scyq_icon.png" alt="">市场舆情监控</li>
+                <li><img src="imgs/menus/jysp_icon.png" alt="">交易产品监控</li>
+                <li><img src="imgs/menus/ywyc_icon.png" alt="">业务异常监控</li>
+                <li><img src="imgs/menus/gsxx_icon.png" alt="">工商信息监控</li>
+            </ul>
+            <li>风控报告<span></span></li>
+            <ul class="sub_menus sub_menus4">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控周报</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控月报</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">风控年报</li>
+        </ul>
+        <li>业务数据<span></span></li>
+            <ul class="sub_menus sub_menus5">
+                <li><img src="imgs/menus/khyd_icon.png" alt="">业务统计</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">客户信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">资金信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">交易信息</li>
+                <li><img src="imgs/menus/khyd_icon.png" alt="">交割统计</li>
+            </ul>
+            <li>风险预测</li>
+        </ul>
+    </div>
+    <div class="main active">
+        <div class="box box1 box_active">
+            <div class="box_header">
+                <ul>
+                    <li>机构数：<span>5</span>家</li>
+                    <li>交易额：<span>403,213,543</span>元</li>
+                    <li>累计风险：<span>124</span>起</li>
+                    <li>今日风险：<span>8</span>起</li>
+                </ul>
+            </div>
+            <div class="box_content">
+                <div class="box1_left">
+                    <div class="jgfbt">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+
+                    </div>
+                    <div class="jgfbt_header">机构分布图</div>
+                    <!-- Button trigger modal -->
+                    <span data-toggle="modal" data-target="#myModal"></span>
+                    <!-- Modal -->
+                    <div class="modal fade bs-example-" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                        <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel">机构分布图</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="imgs/modal_map.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box1_right">
+                    <div class="box1_right_top">
+                        <div class="bottom-right_top_left">
+                            <div class="fxzlzb"></div>
+                            <div class="fxzlzb_header">风险种类占比</div>
+                            <!-- Button trigger modal -->
+                            <span data-toggle="modal" data-target="#myModal1"></span>
+                            <!-- Modal -->
+                            <div class="modal fade " id="myModal1" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog " role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel1">风险种类占比</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="imgs/modal_pie.png" alt="">
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-right_top_right">
+                           <div class="bottom-right_top_right_top">
+                               <div class="yhs_header">用户数:<b>421,243</b></div>
+                               <span data-toggle="modal" data-target="#myModal2"></span>
+                               <div class="yhs"></div>
+                           </div>
+                            <div class="bottom-right_top_right_bottom">
+                                <div class="cdzj_header">沉淀资金:<b>241,232,124</b></div>
+                                <span data-toggle="modal" data-target="#myModal3"></span>
+                                <div class="cdzj"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box1_right_bottom">
+                        <div class="fxsjmx" data-toggle="modal" data-target="#myModal5"></div>
+                        <!-- Button trigger modal -->
+                        <span data-toggle="modal" data-target="#myModal4"></span>
+                        <!-- Modal -->
+                        <div class="modal fade " id="myModal4" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel">
+                            <div class="modal-dialog " role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel3">风险事件明细</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="imgs/modal_table.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade " id="myModal5" tabindex="-1" role="dialog"
+                             aria-labelledby="myModalLabel">
+                            <div class="modal-dialog " role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span></button>
+                                        <h4 class="modal-title" id="myModalLabel5">风险事件明细</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="imgs/modal_table.png" alt="">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="box"><img src="imgs/box_fxhx.png" alt=""></div>
+            <div class="box"><img src="imgs/box_zbdb.png" alt=""></div>
+        </div>
+        <div class="box3">
+            <div class="box"><img src="imgs/box_khfx.png" alt=""></div>
+            <div class="box"><img src="imgs/box_zjyd.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+        <div class="box4">
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+        <div class="box5">
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+            <div class="box"><img src="imgs/zwkf_box.png" alt=""></div>
+        </div>
+    </div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+    <div class="main"><img src="imgs/zwkf_box.png" alt=""></div>
+</div>
+
+</body>
+</html>
+<script src="asserts/js/jquery-2.2.4.js"></script>
+<script src="asserts/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+//        上方tab栏切换
+        $('.header_tabs>ul>li').click(function () {
+            var index = $(this).index();
+            $(this).addClass('header_tabs_active').siblings().removeClass('header_tabs_active');
+            $(".main:eq(" + index + ")").addClass("active").siblings().removeClass("active");
+        });
+//        二级菜单切换
+        $('.jypt ul li').click(function () {
+            $(this).addClass('dropdown-menu_li_active').siblings().removeClass('dropdown-menu_li_active')
+        });
+//        点击交易平台出现下拉框
+        $('.jypt').siblings().click(function () {
+            $('.jypt ul').css('display','none');
+        })
+        $('.jypt').click(function () {
+            $('.jypt ul').toggle();
+        });
+//        时间
+        var timer = ""
+        timer = setInterval(function () {
+            var myDate = new Date();
+//            var hour = myDate.getHours() < 10 ? "0" + myDate.getHours() : myDate.getHours();
+//            var min = myDate.getMinutes() < 10 ? "0" + myDate.getMinutes() : myDate.getMinutes();
+//            var sec = myDate.getSeconds() < 10 ? "0" + myDate.getSeconds() : myDate.getSeconds();
+            var year=myDate.getFullYear();
+            var month=myDate.getMonth()+1;
+            var day=myDate.getDate()< 10 ? "0" + myDate.getDate() : myDate.getDate();
+//            var time = (hour + ":" + min + ":" + sec);
+            var time = (year + "-" + month + "-" + day);
+            var localtime = $(".header .date_time span") //所在位置
+            localtime.html(time)
+        }, 1000)
+
+//        左侧菜单切换
+        $(".menus>li").click(function () {
+            $(".menus li").removeClass('li_active');
+            $(this).addClass('li_active').siblings('li').removeClass('li_active');
+            $(this).next('.sub_menus').css('display', 'block');
+            $(this).siblings('li').next('.sub_menus').css('display', 'none');
+
+
+        });
+//       右侧内容切换
+        $('.sub_menus li').click(function () {
+            var index = $(this).index();
+            var box_index=$(this).parent('.sub_menus').index()/2+1;
+            $(this).addClass('li_active').siblings('li').removeClass('li_active');
+            $(".box").removeClass("box_active");
+            $( "." + "box"+box_index).css('display','block').siblings().css('display','none');
+            $( "." + "box"+box_index).children('.box').eq(index).addClass("box_active").siblings().removeClass('box_active');
+//            二级目录前的图片切换
+//            var bgImg=$(this).find('img').attr('src');
+//            if(bgImg.indexOf('_icon.png')>=0){
+//                bgImg = bgImg.replace("_icon.png", "_sel.png");
+//                $(this).find('img').attr('src',bgImg);
+//            }
+        });
+        $('.top1').click(function () {
+            $('.box1').css('display','block');
+        });
+        //地图上的图片弹出
+        var imgs=['imgs/map_img/page1.png','imgs/map_img/page2.png','imgs/map_img/page3.png','imgs/map_img/page4.png','imgs/map_img/page5.png']
+        $('.jgfbt>img').click(function () {
+            var index=$(this).index()
+            $(this).attr('src',imgs[index]).siblings('img').attr('src','');
+        });
+		
+		 $('.jgfbt>img').mouseout(function () {
+            var index=$(this).index()
+            $(this).attr('src','');
+        })
+    });
+>>>>>>> 7a4f0e2f8a18c0fc7a5a8b235aca8184a2d138c2:06.UI设计图/2.需求原型/qingsuan 2/index.html
+</script>
