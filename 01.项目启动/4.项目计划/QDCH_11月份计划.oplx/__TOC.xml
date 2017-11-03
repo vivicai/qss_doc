@@ -15,7 +15,7 @@
         <expanded-items idrefs="t11 t30 t29 t2 t5"/>
         <selected-items-at-filter-time idrefs="t26 t13 t8 t32 t9 t27 t14 t33 t20 t28 t15 t34 t21 t29 t16 t35 t22 t17 t23 t2 t10 t18 t3 t24 t4 t11 t19 t30 t5 t25 t6 t12 t31 t7"/>
       </outline>
-      <gantt-view x="-22" y="0" w="588" h="734">
+      <gantt-view x="-50" y="0" w="588" h="734">
         <view-mode>actual</view-mode>
         <dependency-lines/>
         <constraints/>
@@ -47,10 +47,10 @@
         <task-bar-label task-type="task" position="right">
           <key>Assigned</key>
         </task-bar-label>
-        <scale scale-name="Automatic" full-day-width="35.0891">
+        <scale scale-name="Automatic" full-day-width="35.0891"/>
+        <scale scale-name="Day" full-day-width="109.283">
           <selected/>
         </scale>
-        <scale scale-name="Day" full-day-width="1215"/>
         <scale scale-name="Hour" full-day-width="65880"/>
         <scale scale-name="Minute" full-day-width="64800"/>
         <scale scale-name="Month" full-day-width="34.5"/>
