@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="jN8o9ka8w0t">
+  <start-date>2017-11-01T01:00:00.000Z</start-date>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <name/>
+    <type>Group</type>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name/>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t2"/>
+    <child-task idref="t5"/>
+    <child-task idref="t11"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+  </task>
+  <task id="t2">
+    <title>系统架构</title>
+    <type>group</type>
+    <child-task idref="t6"/>
+    <child-task idref="t10"/>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+  </task>
+  <task id="t5">
+    <title>数据仓库（秉润、鲁军、庆岩）</title>
+    <type>group</type>
+    <child-task idref="t24"/>
+    <child-task idref="t12"/>
+    <child-task idref="t14"/>
+    <child-task idref="t23"/>
+    <child-task idref="t27"/>
+  </task>
+  <task id="t6">
+    <title>系统架构设计</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t7">
+    <title>ETS&amp;Kettle部署</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-11-02T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-02T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t8">
+    <title>FR部署</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-11-03T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-03T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t10">
+    <title>GreenPlum部署</title>
+    <effort>57600</effort>
+  </task>
+  <task id="t11">
+    <title>Java开发（青贝、坤江）</title>
+    <type>group</type>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t19"/>
+    <child-task idref="t20"/>
+  </task>
+  <task id="t12">
+    <title>数据仓库建模</title>
+    <effort>288000</effort>
+  </task>
+  <task id="t14">
+    <title>维度表开发</title>
+    <effort>144000</effort>
+    <start-constraint-date>2017-11-15T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-15T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t16">
+    <title>数据接口设计</title>
+    <effort>57600</effort>
+    <start-constraint-date>2017-11-06T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-06T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t17">
+    <title>舆情数据接口</title>
+    <effort>86400</effort>
+    <start-constraint-date>2017-11-07T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-07T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t18">
+    <title>工商数据接口</title>
+    <effort>86400</effort>
+    <start-constraint-date>2017-11-09T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-09T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t19">
+    <title>短信平台接口</title>
+    <effort>86400</effort>
+    <start-constraint-date>2017-11-14T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-14T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t20">
+    <title>微信接口开发</title>
+    <effort>144000</effort>
+    <start-constraint-date>2017-11-20T01:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-20T01:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t23">
+    <title>事实表开发</title>
+    <effort>518400</effort>
+    <start-constraint-date>2017-11-22T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-22T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t24">
+    <title>整体架构设计</title>
+    <effort>28800</effort>
+    <start-constraint-date>2017-11-02T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t27">
+    <title>页面数据开发</title>
+    <effort>201600</effort>
+    <start-constraint-date>2017-12-18T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-12-18T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t29">
+    <title>测试</title>
+    <type>group</type>
+    <start-constraint-date>2017-11-02T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+    <child-task idref="t34"/>
+    <start-no-earlier-than>2017-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t30">
+    <title>生产部署</title>
+    <type>group</type>
+    <start-constraint-date>2017-11-02T00:00:00.000Z</start-constraint-date>
+    <child-task idref="t35"/>
+    <start-no-earlier-than>2017-11-02T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t31">
+    <title>测试计划</title>
+    <effort>86400</effort>
+    <start-constraint-date>2017-11-06T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-06T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t32">
+    <title>测试用例</title>
+    <effort>86400</effort>
+    <start-constraint-date>2017-11-09T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-09T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t33">
+    <title>集成测试</title>
+    <effort>144000</effort>
+    <start-constraint-date>2017-12-18T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-12-18T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t34">
+    <title>用户测试</title>
+    <effort>144000</effort>
+    <start-constraint-date>2017-11-20T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-11-20T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <task id="t35">
+    <title>生产环境部署</title>
+    <effort>144000</effort>
+    <start-constraint-date>2017-12-25T00:00:00.000Z</start-constraint-date>
+    <start-no-earlier-than>2017-12-25T00:00:00.000Z</start-no-earlier-than>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
