@@ -1,0 +1,132 @@
+    private Long keywordId;关键词ID
+
+    private Integer titleScore;标题命中得分
+
+    private Integer contentScore;内容命中得分
+
+    private String subjectWords;主题词(内容中的高频词)
+ 
+    private Integer score;总得分
+
+    private String title;标题
+ 
+    private Long titleCrc32;标题CRC32
+
+    private String summary;内容摘要
+
+    private String url;连接地址
+
+    private String siteUrl;网站地址
+
+    private String siteName;网站名称
+
+    private String topDomain;顶级域名
+
+    private String publisher;发布用户
+
+    private String publishTime;发布时间
+
+    private String ip;IP地址
+
+    private String ipName;IP落地地址
+ 
+    private Short isTopic;是否是主贴
+
+    private String relateId;回复贴关联ID
+
+    private String guid;大索引ID
+
+    private String saveTime;保存时间
+  
+    private Long urlCrc32;链接地址CRC32
+
+    private Long groupId;所属用户组
+ 
+    private String datasource;数据源
+   
+    private String dimensionCode;维度编号
+
+    private Long enterpriseId;企业编号
+  
+    private Short dataAreaFlag;数据区域标识(大陆/境外)
+ 
+    private String publishDate;发布时间
+
+    private Boolean isRead;是否已读
+
+    private String readUsers;已读用户
+
+    private Boolean isReport;是否加入简报
+
+    private Boolean isRecommend;是否已推荐
+
+    private String favUsers;收藏用户
+
+    private String datasourceName;数据源名称
+
+    private String extend1;//是否是投诉信息,extend1=1投诉，extend1=2负面
+
+    private String extend2;//是否是负面信息---信息定性，1正常 2负面
+
+    private String extend3;//标记重点，web显示“V”
+
+    private String extend4;//暂时未用
+
+    private String extend5;//暂时未用
+ 
+    private String hitKeyword;//命中的关键词集合，用逗号隔开
+ 
+    private Integer isHitTitle=0;//是否命中标题
+
+    private String siteIpName;
+   
+    private String infoId;
+  
+    private String cloudGuid;
+
+    private String content;//消息内容 不存入数据库
+
+    private String poster;
+
+    private String ipAddr;
+
+    private String ipArea;
+
+    private String siteAreaid;
+
+    private String siteServerAreaid;
+    
+    private String siteBoardServerAreaid;
+    
+    private String siteDomain;
+
+    private String contReferArea;
+
+    private Short siteDomainType;
+  
+    private Short isOverseas;
+
+    private String pageActionType;
+   
+    private String areaCode;
+
+    private String areaName;
+
+    private String areaKeyword;
+
+    private Integer reviewCnt;
+
+    private Integer commentCnt;
+   
+    private Integer retweetCnt;
+  
+    private Short isCunnar = 0;是否存证 1-存 0-未存
+
+    private String cunnarUsers;存证用户信息
+ 
+    private Long similarNum;相似数量
+
+    private Long similarId;
+
+    private Short isAttention;是否关注 用户手工设置
+
